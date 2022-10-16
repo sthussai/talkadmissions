@@ -1,3 +1,139 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300,400,700);
+@import 'large.css';
+@import 'medium.css';
+@import 'small.css';
+
+body {
+    height: 100%;
+    /* font-family: 'Shippori Antique', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+}
+html {
+    height: 100%
+}
+
+
+
+#navbar {
+    max-width: 2000px;
+    margin: auto;
+    opacity: 0.9;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 20px 10px 10px;
+    /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s;
+    /* Adds a transition effect when the padding is decreased */
+    position: fixed;
+    /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0;
+    /* At the top */
+    z-index: 1;
+  }
+
+    /* Style the logo */
+    #navbar #logo {
+        font-size: 35px;
+        transition: 0.4s;
+        color: #185173;
+      }
+
+
+
+       /* Create a Parallax Effect */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3, 
+ #three-panels {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url('https://talkadmissions.com/images/people.jpg');
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation:start 10s;
+  -webkit-animation-iteration-count: 1;
+  position:relative;
+  }
+
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("https://talkadmissions.com/images/people.jpg");
+    min-height: 400px;
+  }
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+    min-height: 400px;
+  }
+  /* Fourth image  */
+  .bgimg-4 {
+    background-image: url('/storage/app/public/balance.png');
+    min-height: 500px;
+    background-size: cover;
+  }
+
+  #three-panels {
+        min-height: 400px;
+  }
+
+
+  div.zoom p {
+    font-size: 17px;
+}
+
+.zoom {
+    transition: 0.5s;
+
+}
+
+
+.zoom:hover {
+    transform: scale(1.05);/* 
+    -webkit-box-shadow: 3px 30px 38px -31px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 3px 30px 38px -31px rgba(0, 0, 0, 0.53);
+    box-shadow: 3px 30px 38px -31px rgba(0, 0, 0, 0.53); */
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+@-webkit-keyframes start {
+  0% {
+     transform: scale(1, 1);
+   }
+   50% {
+     transform: scale(1.1, 1.1);
+   }
+   100% {
+     transform: scale(1, 1);
+   }
+ }
+
+.flex-row {
+  display: flex;
+  min-height: 500px;
+  /* equal height of the children */
+}
+
+.flex-col {
+  flex: 1;
+  /* additionally, equal width */
+
+}
+
+
+
+
