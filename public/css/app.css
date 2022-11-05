@@ -1632,7 +1632,7 @@ svg .polygon{
     background-repeat: no-repeat;
     background-size: cover;
   }/* First image (Logo. Full height) */.bgimg-1 {
-    background-image: url('https://talkadmissions.com/images/people.jpg');
+    background-image: url('value.jpg');
     min-height: 100%;
     background-attachment: fixed;
     background-position: center;
